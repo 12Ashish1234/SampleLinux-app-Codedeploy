@@ -1,5 +1,7 @@
 #!/bin/bash
 # service httpd start
 ls -l
-sudo systemctl start apache2
+#sudo systemctl start apache2
 
+# If systemctl command doesn't work, use 'service command' - referrence-> https://linuxhandbook.com/system-has-not-been-booted-with-systemd/
+sudo service apache2 start
